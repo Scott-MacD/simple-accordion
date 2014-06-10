@@ -13,7 +13,7 @@
 
     <script type="text/javascript">
         $(function() {
-            $('.accordion').accordion();
+            $.accordion();
         });
     </script>
 
@@ -21,15 +21,15 @@
 <body>
 
     <h1>Accordion 1</h1>
-    <dl class="accordion">
+    <dl data-accordion="#panel-one" class="accordion">
         <dt><a href="#panel-one">Panel One</a></dt>
-        <dd data-default id="panel-one">Panel one content goes here</dd>
+        <dd id="panel-one">Panel one content goes here</dd>
         <dt><a href="#panel-two">Panel Two</a></dt>
         <dd id="panel-two">Panel two content at <a href="http://google.ca">Google</a></dd>
     </dl>
 
     <h1>Acc 2</h1>
-    <dl data-accordion class="accordion">
+    <dl data-accordion="#p1" class="accordion">
         <dt><a href="#p1">Panel One</a></dt>
         <dd id="p1">Panel one content goes here</dd>
         <dt><a href="#p2">Panel Two</a></dt>
