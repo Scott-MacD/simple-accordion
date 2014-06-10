@@ -1,0 +1,20 @@
+.accordion dd {
+    height: 0;
+    overflow: hidden;
+    -webkit-transition: height 100ms ease-out;
+    -moz-transition: height 100ms ease-out;
+    -o-transition: height 100ms ease-out;
+    transition: height 100ms ease-out;
+}
+
+.accordion dt.active a {
+    color: #f00;
+}
+.accordion dd.active {
+    background: #ccc;
+}
+
+/* Non-js fallback */
+.accordion dd:target {
+    height: auto;
+}

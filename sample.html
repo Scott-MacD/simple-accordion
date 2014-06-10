@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <title>Simple Accordion Demo by Scott MacDonald | Subscript Labs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="accordion.css">
+
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    <script type="text/javascript" src="accordion.jquery.js"></script>
+
+    <script type="text/javascript">
+        $(function() {
+            $('.accordion').accordion();
+        });
+    </script>
+
+</head>
+<body>
+
+    <h1>Accordion 1</h1>
+    <dl class="accordion">
+        <dt><a href="#panel-one">Panel One</a></dt>
+        <dd data-default id="panel-one">Panel one content goes here</dd>
+        <dt><a href="#panel-two">Panel Two</a></dt>
+        <dd id="panel-two">Panel two content at <a href="http://google.ca">Google</a></dd>
+    </dl>
+
+    <h1>Acc 2</h1>
+    <dl data-accordion class="accordion">
+        <dt><a href="#p1">Panel One</a></dt>
+        <dd id="p1">Panel one content goes here</dd>
+        <dt><a href="#p2">Panel Two</a></dt>
+        <dd id="p2">Panel two content</dd>
+    </dl>
+
+</body>
+</html>
